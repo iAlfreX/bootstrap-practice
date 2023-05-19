@@ -8,74 +8,77 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand text-warning" href="#">Logo</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="#team">Команда</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#gallery">Галерея</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#news">Новини</a>
-            </li>
-          </ul>
-          <a href="tel:+38050345893" class="btn btn-warning">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20">
-              <path
-                d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"
-              />
-            </svg>
-            +38050345893
-          </a>
-          <div class="d-flex ms-3">
-            <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign in</button>
+    <header class="header bg-dark">
+		<div class="container">
+			<nav class="navbar navbar-expand-lg navbar-dark">
+				<a class="navbar-brand text-warning" href="#">Logo</a>
+				<button
+				  class="navbar-toggler"
+				  type="button"
+				  data-bs-toggle="collapse"
+				  data-bs-target="#navbarSupportedContent"
+				  aria-controls="navbarSupportedContent"
+				  aria-expanded="false"
+				  aria-label="Toggle navigation"
+				>
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					 <li class="nav-item">
+						<a class="nav-link" href="#team">Команда</a>
+					 </li>
+					 <li class="nav-item">
+						<a class="nav-link" href="#gallery">Галерея</a>
+					 </li>
+					 <li class="nav-item">
+						<a class="nav-link" href="#news">Новини</a>
+					 </li>
+				  </ul>
+				  <a href="tel:+38050345893" class="btn btn-warning">
+					 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20">
+						<path
+						  d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"
+						/>
+					 </svg>
+					 +38050345893
+				  </a>
+				  <div class="d-flex navbar-btn">
+					 <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign in</button>
+				  </div>
+				</div>
+			 </div>
+		  </nav>
+		</div>
+
+      <div class="banner d-flex align-items-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h1 class="text-info">Доброго вечора, Ми з України!</h1>
+              <p class="text-white">
+                Часто буває так, що зміст тексту не має великого значення, а важливий тільки його обсяг або структура.
+                Генератор тексту онлайн дозволить отримати необхідну кількість слів, речень чи абзаців.
+              </p>
+              <a href="#" class="btn btn-outline-info btn-lg">See all</a>
+            </div>
           </div>
         </div>
       </div>
-    </nav>
 
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Окно входа в учетную запись</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">Я модальное окно</div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <header class="header d-flex align-items-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <h1 class="text-info">Доброго вечора, Ми з України!</h1>
-            <p class="text-white">
-              Часто буває так, що зміст тексту не має великого значення, а важливий тільки його обсяг або структура.
-              Генератор тексту онлайн дозволить отримати необхідну кількість слів, речень чи абзаців.
-            </p>
-            <a href="#" class="btn btn-outline-info btn-lg">See all</a>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Окно входа в учетную запись</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">Я модальное окно</div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
           </div>
         </div>
       </div>
@@ -86,22 +89,22 @@
         <h2 class="text-center mb-5">Наша команда</h2>
         <div class="container">
           <div class="row">
-            <div class="col-md-6 col-lg-3 text-center">
+            <div role="button" class="col-md-6 col-lg-3 text-center info-block">
               <img src="img/avatar.png" alt="" class="border border-3 border-info rounded-circle mb-3" />
               <h3>Іван</h3>
               <p>молодший спеціаліст</p>
             </div>
-            <div class="col-md-6 col-lg-3 text-center">
+            <div role="button" class="col-md-6 col-lg-3 text-center info-block">
               <img src="img/avatar.png" alt="" class="border border-3 border-info rounded-circle mb-3" />
               <h3>Іван</h3>
               <p>молодший спеціаліст</p>
             </div>
-            <div class="col-md-6 col-lg-3 text-center">
+            <div role="button" class="col-md-6 col-lg-3 text-center info-block">
               <img src="img/avatar.png" alt="" class="border border-3 border-info rounded-circle mb-3" />
               <h3>Іван</h3>
               <p>молодший спеціаліст</p>
             </div>
-            <div class="col-md-6 col-lg-3 text-center">
+            <div role="button" class="col-md-6 col-lg-3 text-center info-block">
               <img src="img/avatar.png" alt="" class="border border-3 border-info rounded-circle mb-3" />
               <h3>Іван</h3>
               <p>молодший спеціаліст</p>
@@ -112,7 +115,7 @@
       <div id="gallery" class="py-5 border-bottom border-info">
         <h2 class="text-center mb-5">Галерея</h2>
         <div class="container">
-          <div id="carouselExample" class="carousel slide">
+          <div id="carouselExample" class="carousel slide carousel-dark">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="img/portfolio/portfolio-1.png" class="d-block w-100" alt="..." />
